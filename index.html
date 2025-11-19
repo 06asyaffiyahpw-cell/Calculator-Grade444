@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otomotif Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop autoplay>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="music-control">
+        <button onclick="toggleMusic()">🔊 Music</button>
+    </div>
+
+    <!-- Animated Gear Decoration -->
+    <div class="gear gear1"></div>
+    <div class="gear gear2"></div>
+
+    <div class="container">
+        <h1>🚗 Otomotif Grade Calculator</h1>
+        <p class="subtitle">Aplikasi Penghitung Nilai Lengkap</p>
+
+        <div class="form-group">
+            <label>Tugas</label>
+            <input type="number" id="tugas" placeholder="0 - 100">
+        </div>
+
+        <div class="form-group">
+            <label>Ulangan Harian</label>
+            <input type="number" id="uh" placeholder="0 - 100">
+        </div>
+
+        <div class="form-group">
+            <label>UTS</label>
+            <input type="number" id="uts" placeholder="0 - 100">
+        </div>
+
+        <div class="form-group">
+            <label>UAS</label>
+            <input type="number" id="uas" placeholder="0 - 100">
+        </div>
+
+        <div class="form-group">
+            <label>SAS</label>
+            <input type="number" id="sas" placeholder="0 - 100">
+        </div>
+
+        <button onclick="hitung()">Hitung Nilai</button>
+
+        <div id="hasil"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
