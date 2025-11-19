@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0a0f24;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 60px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #0ff;
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    text-align: center;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+}
+
+.subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    background: #111827;
+    border: 1px solid #0ff;
+    border-radius: 8px;
+    color: #0ff;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0ff;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00c8c8;
+}
+
+/* Hasil Box */
+#hasil {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid #0ff;
+    border-radius: 10px;
+    font-size: 18px;
+    text-shadow: 0 0 8px #0ff;
+}
+
+/* Music Button */
+.music-control {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.music-control button {
+    padding: 10px 12px;
+    background: #0ff;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Animated Gears */
+.gear {
+    width: 120px;
+    height: 120px;
+    background: url('gear.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    animation: spin 7s linear infinite;
+    opacity: 0.3;
+}
+
+.gear1 { top: 10px; left: 10px; }
+.gear2 { bottom: 20px; right: 20px; animation-duration: 12s; }
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
